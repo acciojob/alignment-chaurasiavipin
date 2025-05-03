@@ -1,96 +1,111 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-  <title>HTML Assignment #3</title>
-  <style>
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-    table {
-      width: 100%;
-    }
-    td {
-      padding: 10px;
-      text-align: center;
-    }
-    .green {
-      background-color: green;
-      height: 40px;
-    }
-    .blue {
-      background-color: blue;
-      height: 40px;
-    }
-    .image-cell {
-      text-align: center;
-    }
-  </style>
+	<link rel="stylesheet" href="styles.css">
+	<title class="center">HTML Assignment 3</title>
+	<style>
+		table{border:1px solid black;
+			 border-spacing:1px;
+			 padding:1px;
+			 margin:auto;}
+		th,td{
+			border:1px solid black;
+			padding:1px;
+		}
+		.center{text-align:center;}
+		.right{text-align:right;}
+		.left{text-align:left;}
+		.green{background-color:green;}
+		.blue{background-color:blue;}
+		.middle{text-align:center;}
+	</style>
 </head>
+
 <body>
+	<!-- the entire body must be written by student -->
+	<!--<h1>HTML Assignment #3</h1>-->
+	<!--<caption style="text-align:center;">HTML Assignment #3</caption>-->
+	<h1 style="text-align:center;">HTML Assignment #3</h1>
+	<table id="table-1" class="middle">
+		
+		
+			<tr>
+				<td id="t11" class="left">left</td>
+				<td id="t12" class="center" >center</td>
+				<td id="t13" class="right" >right</td>
+			</tr>
+			<tr>
+				<td  class="left">left</td>
+				<td id="t22" class="center" >center</td>
+				<td id="t23" class="right" >right</td>
+			</tr>
+			<tr>
+				<td id="t31" class="left">left</td>
+				<td id="t32" class="center" >center</td>
+				<td id="t33" class="right" >right</td>
+			</tr>
 
-  <!-- Centered Heading -->
-  <h2 style="text-align: center;">HTML Assignment #3</h2>
+	</table><br>
+	
+	<!-- table 2-->
+	<table id="table-2" class="middle"  >
+		<tr>
+			<td id="t21" colspan="6"></td>
+		</tr>
+	<tr>
+		<td rowspan="4"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		
 
-  <!-- First Table -->
-  <table>
-    <tr>
-      <td style="text-align: left;">left</td>
-      <td style="text-align: center;">center</td>
-      <td style="text-align: right;">right</td>
-    </tr>
-    <tr>
-      <td style="text-align: left;">left</td>
-      <td style="text-align: center;">center</td>
-      <td style="text-align: right;">right</td>
-    </tr>
-    <tr>
-      <td style="text-align: left;">left</td>
-      <td style="text-align: center;">center</td>
-      <td style="text-align: right;">right</td>
-    </tr>
-  </table>
-  <br>
-
-  <!-- Nested Table -->
-  <table>
-    <tr>
-      <td colspan="5" style="height: 30px;"></td>
-    </tr>
-    <tr>
-      <td rowspan="2" style="width: 20%;"></td>
-      <td style="width: 20%;"></td>
-      <td style="width: 20%;"></td>
-      <td style="width: 20%;"></td>
-      <td rowspan="2" style="width: 20%;"></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="5" style="height: 30px;"></td>
-    </tr>
-  </table>
-  <br>
-
-  <!-- Image Table with Color Bands -->
-  <table>
-    <tr class="green">
-      <td colspan="3"></td>
-    </tr>
-    <tr>
-      <td style="width: 33.33%; height: 300px;"></td>
-      <td class="image-cell">
-        <img src="https://i.pinimg.com/originals/35/29/15/3529151d7b9b640d98e6747c62c75a5e.jpg" width="300">
-      </td>
-      <td style="width: 33.33%;"></td>
-    </tr>
-    <tr class="blue">
-      <td colspan="3"></td>
-    </tr>
-  </table>
+	</tr>
+		<tr>
+			<td></td>
+			
+			<td colspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			
+		</tr>
+		<tr>
+			<td></td><td></td>
+			<td></td><td></td>
+			<td></td><td></td>
+		</tr>
+	</table><br>
+	
+	<table id="table-3" class="middle"  >
+		
+		<tr class="green">
+			<td colspan="3"></td>
+		</tr>
+		<tr><td></td>
+			<td id="t-image">
+			<img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"
+				></td>
+		<td></td>
+		</tr><tr class="blue">
+		<td colspan="3"></td>
+		</tr>
+	</table>
+		
+    <script type="text/javascript" src="./script.js">
+</script>
 
 </body>
+
 </html>
